@@ -582,7 +582,7 @@ Navbar
 .navbar-nav > li.active > a:focus,
 .navbar-nav > li.active > a:active {
     background: none;
-    color: #50c6eb;
+    color: #0566ae;
 }
 
 .dropdown-menu {
