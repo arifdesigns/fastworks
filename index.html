@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="ico/favicon.png">
+    <title>Fastworks</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Jssor slider -->
+    <link href="css/jssor.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Theme skins -->
+    <link id="skin" href="skins/default.css" rel="stylesheet"> </head>
+
+<body>
+    <!-- Start preloading -->
+    <div id="loading" class="loading-invisible">
+        <div class="loading-center">
+            <div class="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_five"></div>
+                <div class="object" id="object_six"></div>
+                <div class="object" id="object_seven"></div>
+                <div class="object" id="object_eight"></div>
+                <div class="object" id="object_big"></div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("loading").className = "loading-visible";
+        var hideDiv = function () {
+            document.getElementById("loading").className = "loading-invisible";
+        };
+        var oldLoad = window.onload;
+        var newLoad = oldLoad ? function () {
+            hideDiv.call(this);
+            oldLoad.call(this);
+        } : hideDiv;
+        window.onload = newLoad;
+    </script>
+    <!-- End preloading -->
+    <!-- Start Navbar -->
+    <nav class="navbar yamm navbar-dark navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="theme logo" /></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li> <a href="#">About</a> </li>
+                    <li> <a href="#">Services</a> </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Jssor Slider Begin -->
+    <div id="slider_container" style="width: 1190px; height: 600px;">
+        <!-- Start loading Screen -->
+        <div data-jssor="loading" class="jssor-loading">
+            <div class="loading-overlay"></div>
+            <div style="loading-image"></div>
+        </div>
+        <!-- End loading Screen -->
+        <!-- Slides Container -->
+        <div data-jssor="slides" class="jssor-slide" style="width: 1190px; height: 600px;">
+            <div> <img data-jssor="image" src="img/slider/jssor/secondBG.jpg" alt="" />
+                <div data-jssor="caption" data-trans="R|IB" class="jssor-caption captionHeadline1" style="left:90px; top: 230px; width:1170px"> Creative <span>Digital</span> Agency </div>
+                <div data-jssor="caption" data-trans="R|IB" class="jssor-caption captionTextline1" style="left:90px; top: 300px; width:1170px">
+                    <ul class="slide-services">
+                        <li> <span class="title">Web<br><b>Design</b></span> </li>
+                        <li> <span class="title">Web<br><b>Development</b></span> </li>
+                        <li> <span class="title">Digital<br><b>Marketing</b></span> </li>
+                        <li> <span class="title">Brand<br><b>Identity</b></span> </li>
+                        <li> <span class="title">Mobile<br><b>Application</b></span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div> <img data-jssor="image" src="img/slider/jssor/one.jpg" alt="" />
+                <div data-jssor="caption" data-trans="R|IB" class="jssor-caption captionHeadline1" style="left:90px; top: 230px; width:1170px"> Our <span>Mission</span> </div>
+                <div data-jssor="caption" data-trans="R|IB" class="jssor-caption captionTextline1" style="left:90px; top: 285px; width:1170px"> To help brands connect with people
+                    <br>in a digital world </div>
+            </div>
+            <div> <img data-jssor="image" src="img/slider/jssor/two.jpg" alt="" />
+                <div data-jssor="caption" data-trans="R|IB" class="jssor-caption captionHeadline1" style="left:90px; top: 230px; width:1170px"> Our <span>People</span></div>
+                <div data-jssor="caption" data-trans="R|IB" class="jssor-caption captionTextline1" style="left:90px; top: 285px; width:1170px"> We are a team of passionate and
+                    <br>innovative thinkers, driven to create
+                    <br>awesome experiences. </div>
+            </div>
+        </div>
+        <!-- End Container -->
+        <!-- Start bullet navigator -->
+        <div data-jssor="navigator" class="jssor-navigator">
+            <div data-jssor="prototype"></div>
+        </div>
+        <!--End bullet Navigator -->
+        <!-- Start arrow prev and next --><span data-jssor="arrowleft" class="jessor-prev"></span> <span data-jssor="arrowright" class="jessor-next"></span>
+        <!-- End arrow prev and next -->
+    </div>
+    <!-- Jssor Slider End -->
+    <!-- Start contain wrapp -->
+    <div class="contain-wrapp paddingbot-clear">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="heading">
+                        <h3>About Fastworks</h3>
+                        <p>Duo in tale omnis no elit iuvaret disputando per, mea te decore malorum. Saperet commune erroribus ex mea</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="precess-column">
+                        <div class="icons-wrapp">
+                            <h5 class="count">1</h5> <i class="precess-icons fa fa-download"></i> </div>
+                        <h5>Headline content one</h5>
+                        <p> Eu vel reque eripuit sanctus. Mei ei erant soleat percipitur. Eam ipsum feugait eu, nec vero verear aliquid ex. Ad esse electram pro. </p>
+                        <p><a href="#" class="btn btn-default btn-sm">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="precess-column">
+                        <div class="icons-wrapp">
+                            <h5 class="count">2</h5> <i class="precess-icons fa fa-cogs"></i> </div>
+                        <h5>Headline content two</h5>
+                        <p> Meis probatus ad vim, eam et zril accumsan posidonium. No timeam sanctus iudicabit nec, eum ut dicam insolens. Quis impetus gloriatur. </p>
+                        <p><a href="#" class="btn btn-default btn-sm">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="precess-column">
+                        <div class="icons-wrapp">
+                            <h5 class="count">3</h5> <i class="precess-icons fa fa-magic"></i> </div>
+                        <h5>Headline content three</h5>
+                        <p> An ancillae qualisque ius, cu pri magna blandit. Luptatum omittantur duo ne. Impetus indoctum ad usu, vim suscipit insolens ea hinc. </p>
+                        <p><a href="#" class="btn btn-default btn-sm">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End contain wrapp -->
+    <!-- Start gray contain wrapp -->
+    <div class="contain-wrapp gray-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <h4>We Strategize. We Design. We Develp. We Nurture. </h4>
+                    <p> Per in purto noster officiis, ferri accusam detraxit no duo, vidit vivendum sit ea. Ex pro regione tibique. Sed ea porro explicari, noster pertinacia eu eum. Usu in ullum omnesque atomorum, pro integre imperdiet in. Saperet perpetua ut mei, nibh sale meis eam cu. Ut vim modus zril, ex cum erat dictas urbanitas </p>
+                    <p><a href="#" class="btn btn-default">Learn more</a> <a href="#" class="btn btn-primary btn-icon"><i class="fa fa-download"></i> Download now</a></p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <h5>Our skill</h5>
+                    <div id="progress-bar">
+                        <div class="progress progress-primary progress-sm">
+                            <div class="progress-bar" role="progressbar" data-value-progress="60"> <span class="value-progress">Photoshop</span> </div>
+                        </div>
+                        <div class="progress progress-primary progress-sm">
+                            <div class="progress-bar" role="progressbar" data-value-progress="75"> <span class="value-progress">HTML</span> </div>
+                        </div>
+                        <div class="progress progress-primary progress-sm">
+                            <div class="progress-bar" role="progressbar" data-value-progress="45"> <span class="value-progress">Wordpress</span> </div>
+                        </div>
+                        <div class="progress progress-primary progress-sm">
+                            <div class="progress-bar" role="progressbar" data-value-progress="55"> <span class="value-progress">Javascript</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End gray contain wrapp -->
+    <!-- Start parallax wrapp -->
+    <div class="parallax bg2">
+        <div class="parallax-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <div class="heading">
+                            <h3>Our services to help your business</h3>
+                            <p>Duo in tale omnis no elit iuvaret disputando per, mea te decore malorum. Saperet commune erroribus ex mea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 owl-column-wrapp">
+                        <div id="owl-services" class="owl-carousel leftControls-right">
+                            <div class="item">
+                                <div class="icon-box box-image">
+                                    <div class="box-background"> <img src="img/three.jpg" alt="box image background 01" /> </div>
+                                    <div class="icon-box-contain"> <i class="fa fa-code fa-3x"></i>
+                                        <h5>Web design</h5>
+                                        <p> Sed qualisque ullamcorper ut. Graecis expetendis omittantur cu his. Facer recusabo pericula ei pri. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-box box-primary">
+                                    <div class="icon-box-contain"> <i class="fa fa-laptop fa-3x"></i>
+                                        <h5>App design</h5>
+                                        <p> Sed qualisque ullamcorper ut. Graecis expetendis omittantur cu his. Facer recusabo pericula ei pri. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon-box box-image">
+                                    <div class="box-background"> <img src="img/box-img01.jpg" alt="box image background 01" /> </div>
+                                    <div class="icon-box-contain"> <i class="fa fa-shield fa-3x"></i>
+                                        <h5>logo design</h5>
+                                        <p> Sed qualisque ullamcorper ut. Graecis expetendis omittantur cu his. Facer recusabo pericula ei pri. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End parallax wrapp -->
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget">
+                        <h5>About Fastworks</h5> <img src="img/logo-icon.png" class="alignleft" alt="" />
+                        <p> Eu pro ponderum gloriatur, cu lorem denique pri, soleat interesset no usu. Mel tota melius antiopam ex. Novum iuvaret principes ut vis, at mei tollit convenire. Pri autem solet delicata cu, ad viris copiosae theophrastus eum eam tota adhuc. </p> <a href="#"><i class="fa fa-facebook fa-2x icon-square"></i></a> <a href="#"><i class="fa fa-twitter fa-2x icon-square"></i></a> <a href="#"><i class="fa fa-google-plus fa-2x icon-square"></i></a> <a href="#"><i class="fa fa-instagram fa-2x icon-square"></i></a> <a href="#"><i class="fa fa-linkedin fa-2x icon-square"></i></a> </div>
+                </div>
+                <div class="col-md-2 col-sm-2">
+                    <div class="widget">
+                        <h5>Explor link</h5>
+                        <ul class="list-icons link-list">
+                            <li><i class="fa fa-angle-double-right"></i> <a href="#">Our services</a></li>
+                            <li><i class="fa fa-angle-double-right"></i> <a href="#">Meet our team</a></li>
+                            <li><i class="fa fa-angle-double-right"></i> <a href="#">Forum</a></li>
+                            <li><i class="fa fa-angle-double-right"></i> <a href="#">Help center</a></li>
+                            <li><i class="fa fa-angle-double-right"></i> <a href="#">Contact Fastworks</a></li>
+                            <li><i class="fa fa-angle-double-right"></i> <a href="#">Privacy Policy</a></li>
+                            <li><i class="fa fa-angle-double-right"></i> <a href="#">Site map</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="widget">
+                        <h5>Latest post</h5>
+                        <ul class="recent-post">
+                            <li> <i class="fa fa-file-image-o post-data"></i>
+                                <h6><a href="#">Luptatum omittantur duo ne impetus indoctum</a></h6> </li>
+                            <li> <i class="fa fa-file-video-o post-data"></i>
+                                <h6><a href="#">Eu pro ponderum gloriatur cu lorem denique</a></h6> </li>
+                            <li> <i class="fa fa-file-text-o post-data"></i>
+                                <h6><a href="#">No timeam sanctus iudicabit nec eum ut dicam</a></h6> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="widget">
+                        <h5>Latest project</h5>
+                        <ul class="photostream">
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img01.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img02.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img03.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img04.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img05.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img06.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img07.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img08.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img09.jpg" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gallery/thumbs/img10.jpg" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h5>Newsletter</h5>
+                        <!-- Start Subscribe -->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter your email address..."> <span class="input-group-btn">
+								<button class="btn btn-primary btn-bavel" type="button"><i class="fa fa-send-o"></i></button>
+							</span> </div>
+                        <!-- End Subscribe -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="subfooter">
+                        <p>2017 &copy; Copyright. All rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing-1.3.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Custom form -->
+    <script src="js/form/jcf.js"></script>
+    <!-- Jssor slider -->
+    <script src="js/jssor/jssor.slider.min.js"></script>
+    <script src="js/jssor/setting.js"></script>
+    <!-- Parallax -->
+    <script src="js/parallax/jquery.parallax-1.1.3.js"></script>
+    <script src="js/parallax/setting.js"></script>
+    <!-- Twitter -->
+    <!--[if lte IE 9]>
+    	<script src="js/tweecool/jquery.xdomainrequest.min.js"></script>      
+	<![endif]-->
+    <!-- JavaScript totop -->
+    <script src="js/totop/jquery.ui.totop.js"></script>
+    <script src="js/totop/setting.js"></script>
+    <!-- Custom javaScript for this theme -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
